@@ -203,7 +203,6 @@
     CATransform3D trans = CATransform3DIdentity;
     CATransform3D t = CATransform3DIdentity;
     t.m34 = -0.001;
-    NSLog(@"%f", dist);
     trans = CATransform3DMakeTranslation(0, 0, dist * 1000);
     trans = CATransform3DConcat(CATransform3DMakeRotation(DEGREES_TO_RADIANS(rotateX), 1, 0, 0), trans);
     trans = CATransform3DConcat(CATransform3DMakeRotation(DEGREES_TO_RADIANS(rotateY), 0, 1, 0), trans);
